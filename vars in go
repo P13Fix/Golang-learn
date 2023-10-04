@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func main() {
+	var (
+		x int     = 10
+		b string  = "Hi"
+		z float64 = 1.045
+	)
+	fmt.Println(x, b, z)
+
+	var symbol int32 = 'c'
+	fmt.Println(string(symbol))
+
+  f := 5
+	fmt.Println(f)
+}
