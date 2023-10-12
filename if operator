@@ -43,3 +43,42 @@ case 4: fmt.Println("Four")
 case 5: fmt.Println("Five")
 default: fmt.Println("Unknown Number")
 }
+
+
+
+// switch with condition
+
+package main
+
+import "fmt"
+
+func main() {
+var c uint32
+fmt.Scan(&c)
+switch {
+case 1 <= c && c <= 9:
+	fmt.Println(" 1 to 9")
+case 100 <= c && c <= 250:
+	fmt.Println("100 to 250")
+case 1000 <= c && c <= 6000:
+	fmt.Println("1000 to 6000")
+default:
+    fmt.Println("none value")
+    }
+}
+
+
+// Check different numbers in input xxx
+package main
+
+import "fmt"
+
+func main() {
+var c int
+fmt.Scan(&c)
+if c/100 == c/10%10 || c/100 == c %10 || c/10%10  == c %10 {
+    fmt.Print("No")
+} else {
+    fmt.Print("Yes")
+}
+}
