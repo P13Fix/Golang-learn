@@ -82,3 +82,52 @@ if c/100 == c/10%10 || c/100 == c %10 || c/10%10  == c %10 {
     fmt.Print("Yes")
 }
 }
+
+
+
+//first number of a
+
+package main
+import "fmt"
+
+func main() {
+    var a int
+    fmt.Scan(&a)
+    switch {
+    case a == 10000: fmt.Println(1)
+    case a > 1000: fmt.Println(a/1000)
+    case a > 100: fmt.Println(a/100)
+    case a >10: fmt.Println(a/10)
+    default: fmt.Println(a)
+    }
+}
+
+
+// lucky ticket
+package main
+import "fmt"
+
+func main() {
+    var a int
+    fmt.Scan(&a)
+    if a%10 + a%100/10 + a%1000/100 == a/100000 + a/10000%10 + a/1000%100%10 {
+        fmt.Print("YES")
+    } else {
+        fmt.Print("NO")
+    }
+}
+
+//leap year
+package main
+import "fmt"
+
+func main() {
+    var a int
+    fmt.Scan(&a)
+    if a % 400 == 0 || (a % 4 == 0 && a % 100 != 0) {
+        fmt.Print("YES")
+    } else {
+        fmt.Print("NO")
+    }
+}
+
